@@ -1,8 +1,3 @@
-<style>
-   table {
-      margin: auto;
-   }
-</style>
 # EE228 Final Assignment
 **Author:** Ruiwen Zhou  
 **Student ID:** 518021911150  
