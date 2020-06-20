@@ -7,8 +7,8 @@ def generate_fingerprint(AgentClass, **kwargs):
     with open("board_cases.json") as f:
         board_json = json.load(f)
 
-    game = Game(size=4, enable_rewrite_board=True)
-    agent = AgentClass(game=game, **kwargs)
+    game = Game(size = 4, enable_rewrite_board = True)
+    agent = AgentClass(game = game, **kwargs)
 
     trace = []
     for board in board_json:
@@ -23,14 +23,14 @@ if __name__ == '__main__':
     from collections import Counter
 
     '''====================
-    Use your own agent here.'''
-    from game2048.agents import ExpectiMaxAgent as TestAgent
+    My own agent here.'''
+    from MyAgent import MyOwnAgent as TestAgent
     '''===================='''
 
-    fingerprint = generate_fingerprint(TestAgent)
+    fingerprint = generate_fingerprint(TestAgent, load_path = './mdl_final.pkl')
 
-    with open("EE369_fingerprint.json", 'w') as f:        
+    with open("EE228_fingerprint.json", 'w') as f:        
         pack = dict()
         pack['fingerprint'] = fingerprint
         pack['statstics'] = dict(Counter(fingerprint))
-        f.write(json.dumps(pack, indent=4))
+        f.write(json.dumps(pack, indent = 4))
