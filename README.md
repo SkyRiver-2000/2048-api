@@ -13,7 +13,7 @@ The main **HIGHLIGHTS** of this project can be summarized as following:
 * The convolution structure of my network is a novel combination of two CNNs.
 * The performance of my agent is excellent and stable.
 
-My submission, 1945.6 @10 times, is only one step from 10 victories. However, it is really a pity that I have no luck to produce one.
+My submission, 1945.6 @10 times, is only one step from 10 victories. However, it is really a pity that I have no luck to produce a perfect log file. Due to time limit, I haven't try unlimited or harder mode and I'd like work on it in the future.
 
 ## Code structure
 * [`game2048/`](game2048/): the API and Expectimax package.
@@ -88,7 +88,12 @@ Max Tile | 2~32 | 64 | 128 | 256 | 512 | 1024 | 2048
 Frequence | 0 | 1 |
 Frequency | 0% |
 
-## API Tutorial
+## Discussion and Possible improvements
+* As `mdl_final.pkl` has been powerful, incremental learning might be powerful afterwards
+* I do not use data preprocessing and multi-model decision here, which is possibly useful
+* I train my model offline but I do think this project is more suitable for DQN based model
+
+## API tutorial
 For tutorial of the given 2048 API, refer to [API Tutorial](https://github.com/duducheng/2048-api/blob/master/README.md).
 
 ## LICENSE
