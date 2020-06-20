@@ -19,6 +19,7 @@
 * [`webapp.py`](webapp.py): run the web app (backend) demo.
 * [`evaluate.py`](evaluate.py): evaluate self-defined agent.
 * [`mdl_final.pkl`](mdl_final.pkl): the stored final version model.
+* [`run.sh`](run.sh): the shell script for batch operation of log files.
 * [`data_analysis.cpp`](data_analysis.cpp): C++ code, traverse all logs to analyse the performance of agent
 
 # Requirements
