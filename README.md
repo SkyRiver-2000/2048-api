@@ -1,5 +1,5 @@
 # EE228 Final Assignment
-**Author:** Ruiwen Zhou @ the Department of Information Engineering, SJTU.
+**Author:** Ruiwen Zhou @ the Department of Information Engineering, SJTU.  
 **Introduction:** A **completely offline trained** CNN agent for 2048 game.
 
 # Code structure
@@ -57,7 +57,7 @@ With parameters set in [`run.sh`](run.sh), certain number of logs can be easily 
 
 ### In Windows Powershell
 * To train and evaluate an agent, the operation is exactly the same as in Ubuntu terminal.
-* `run.sh` cannot be used in Windows due to the lack of GPU support in WSL.
+* `run.sh` cannot be used in Windows due to the lack of GPU support in WSL.  
 (Things might change by the end of this year, as Microsoft plans to publish an update for this)
 
 # Performance analysis
