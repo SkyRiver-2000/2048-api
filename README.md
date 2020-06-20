@@ -1,8 +1,19 @@
 # EE228 Final Assignment
-**Author:** Ruiwen Zhou @ the Department of Information Engineering, SJTU.  
-**Introduction:** A **completely offline trained** CNN agent for 2048 game.
+**Author:** Ruiwen Zhou  
+**Student ID:** 518021911150  
+**E-mail:** zrw2000917@163.com
 
-# Code structure
+## Brief Introduction
+This is the final assignment of EE228 Curriculum @ SJTU, in which we are required to generate a learning-based agent to automatically play 2048 game for a high average score in 10 games.  
+
+In this project, I use a completely offline method to obtain a high-performance agent, which has a chance of about 27% to win a single game and more than 70% to reach 1024.  
+
+The main **HIGHLIGHTS** of this project can be summarized as following:
+* The training is completely offline, which makes the solution simple.
+* The convolution structure of my network is a novel combination of two CNNs.
+* The performance of my agent is excellent and stable.
+
+## Code structure
 * [`game2048/`](game2048/): the API and Expectimax package.
     * [`game.py`](game2048/game.py): the core 2048 `Game` class.
     * [`agents.py`](game2048/agents.py): the `Agent` class with instances.
@@ -19,16 +30,16 @@
 * [`webapp.py`](webapp.py): run the web app (backend) demo.
 * [`evaluate.py`](evaluate.py): evaluate self-defined agent.
 * [`mdl_final.pkl`](mdl_final.pkl): the stored final version model.
-* [`run.sh`](run.sh): the shell script for batch operation of log files.
+* [`run.sh`](run.sh): the shell script for batch operation on log files.
 * [`data_analysis.cpp`](data_analysis.cpp): C++ code, traverse all logs to analyse the performance of agent
 
-# Requirements
+## Requirements
 * Code tested on Windows and Linux system (Windows 10 and Ubuntu 18.04)
 * Code written and tested with PyTorch 1.5.0 and Torchvision 0.6.1
 * High version of PyTorch and Torchvision is recommended
 * Python 3 (Anaconda 3.6.3 specifically) with numpy, pandas, tqdm and flask
 
-# Usage of CNN Agent
+## Usage of CNN Agent
 ### In Ubuntu terminal
 * To train a new CNN agent:
 ```shell
@@ -54,14 +65,14 @@ bash run.sh
 # Average score per game: 2048.0
 # ......
 ```
-With parameters set in [`run.sh`](run.sh), certain number of logs can be easily obtained and then analyzed.
+With parameters set in [`run.sh`](run.sh), certain number of log files can be obtained and then analyzed easily.
 
 ### In Windows Powershell
 * To train and evaluate an agent, the operation is exactly the same as in Ubuntu terminal.
 * `run.sh` cannot be used in Windows due to the lack of GPU support in WSL.  
 (Things might change by the end of this year, as Microsoft plans to publish an update for this)
 
-# Performance analysis
+## Performance analysis
 Using `mdl_final.pkl` in agent, I generated 15,000 logs in total and provide some results here:
 ```text
 Average score per game:
@@ -75,8 +86,8 @@ Max Tile | 2~32 | 64 | 128 | 256 | 512 | 1024 | 2048
 Frequence | 0 | 1 |
 Frequency | 0% |
 
-# API Tutorial
+## API Tutorial
 For tutorial of the given 2048 API, refer to [API Tutorial](https://github.com/duducheng/2048-api/blob/master/README.md).
 
-# LICENSE
+## LICENSE
 The code is under Apache-2.0 License.
