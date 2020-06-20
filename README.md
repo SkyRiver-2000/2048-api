@@ -13,7 +13,7 @@ The main **HIGHLIGHTS** of this project can be summarized as following:
 * The convolution structure of my network is a novel combination of two CNNs.
 * The performance of my agent is excellent and stable.
 
-Unfortunately, my submission is only one step from 10 victories, which makes me feel bad.
+My submission here is only one step from 10 victories. However, it is really a pity that I have no luck to produce one.
 
 ## Code structure
 * [`game2048/`](game2048/): the API and Expectimax package.
