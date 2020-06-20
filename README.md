@@ -6,12 +6,14 @@
 ## Brief Introduction
 This is the final assignment of EE228 Curriculum @ SJTU, in which we are required to generate a learning-based agent to automatically play 2048 game for a high average score in 10 games.  
 
-In this project, I use a completely offline method to obtain a high-performance agent, which has a chance of about 27% to win a single game and more than 70% to reach 1024. It feels awful that I have no luck to produce a log file with 10 victories.  
+In this project, I use a completely offline method to obtain a high-performance agent, which has a chance of about 27% to win a single game and more than 70% to reach 1024.  
 
 The main **HIGHLIGHTS** of this project can be summarized as following:
 * The training is completely offline, which makes the solution simple.
 * The convolution structure of my network is a novel combination of two CNNs.
 * The performance of my agent is excellent and stable.
+
+Unfortunately, my submission is only one step from 10 victories, which makes me feel bad.
 
 ## Code structure
 * [`game2048/`](game2048/): the API and Expectimax package.
