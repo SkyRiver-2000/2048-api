@@ -32,7 +32,7 @@ My submission is only one step from 10 victories. However, it is really a pity t
 * [`evaluate.py`](evaluate.py): evaluate self-defined agent.
 * [`mdl_final.pkl`](https://jbox.sjtu.edu.cn/l/9J3k5q): the stored final version model.
 * [`run.sh`](run.sh): the shell script for batch operation on log files.
-* [`data_analysis.cpp`](data_analysis.cpp): C++ code, traverse all logs to analyse the performance of agent.  
+* [`data_analysis.cpp`](data_analysis.cpp): the C++ code traversing all log files to analyze the performance of agent.  
 
 Due to space limit, generated log files and training dataset are not uploaded in this repository.
 
@@ -54,7 +54,7 @@ Save Model? [Y/n] # press Y to store and N to discard the current model
 ```shell
 python evaluate.py >> EE228_evaluation.log
 ```
-* To generate more logs in a single line, either for higher score or for data aggregation:
+* To generate more log files in a single line, either for higher score or for data analysis:
 ```shell
 bash run.sh
 # Get the current round and average score of each log here
