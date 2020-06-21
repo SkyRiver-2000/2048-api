@@ -39,7 +39,7 @@ Due to space limit, generated log files are not uploaded in this repository.
 ## Requirements
 * Code tested on Windows and Linux system (Windows 10 and Ubuntu 18.04)
 * High version of PyTorch and Torchvision is recommended
-* Python 3 (Anaconda 3.6.3 specifically) with numpy, pandas, tqdm and flask
+* Python 3 (Anaconda 3.6.3 specifically) with numpy, pandas and tqdm
 
 ## Usage of CNN Agent
 ### In Ubuntu terminal
