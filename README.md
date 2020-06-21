@@ -23,14 +23,12 @@ My submission, 1945.6 @10 times, is only one step from 10 victories. However, it
     * [`displays.py`](game2048/displays.py): the `Display` class with instances, to show the `Game` state.
     * [`expectimax/`](game2048/expectimax): a powerful ExpectiMax agent by [here](https://github.com/nneonneo/2048-ai).
 * [`static/`](static/): frontend assets (based on Vue.js) for web app.
-* [`explore.ipynb`](explore.ipynb): introduce how to use the `Agent`, `Display` and `Game`.
 * [`MyAgent.py`](MyAgent.py): the `MyOwnAgent` class with its implementation.
 * [`cnn.py`](cnn.py): the `Conv_Net_Com` class used as agent and its two originals.
 * [`train_model.py`](train_model.py): the whole process for training a `Conv_Net_Com` instance, with testing function insides.
 * [`data_process.py`](data_process.py): the `Dataset_2048` class to read and store data, based on `torch.utils.data.Dataset`.
 * [`generate_data.py`](generate_data.py): utilize the planning-based [`Expectimax`](game2048/expectimax) to generate ideal trajectories as training set.
 * [`generate_fingerprint.py`](generate_fingerprint.py): pre-offered script for solution validation.
-* [`webapp.py`](webapp.py): run the web app (backend) demo.
 * [`evaluate.py`](evaluate.py): evaluate self-defined agent.
 * [`mdl_final.pkl`](https://jbox.sjtu.edu.cn/l/9J3k5q): the stored final version model.
 * [`run.sh`](run.sh): the shell script for batch operation on log files.
