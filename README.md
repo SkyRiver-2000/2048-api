@@ -14,7 +14,7 @@ The main **HIGHLIGHTS** of this project can be summarized as following:
 * The performance of my agent is excellent and stable.
 * The operation of generating log files and analyzing data is efficient and simple.
 
-My submission, 1945.6 @10 times, is only one step from 10 victories. However, it is really a pity that I have no luck to produce a perfect log file. Due to time limit, I haven't try unlimited or harder mode and I'd like work on it in the future.
+My submission, **1945.6 @10 times**, is only one step from 10 victories. However, it is really a pity that I have no luck to produce a perfect log file. Due to time limit, I haven't try unlimited or harder mode and I'd like work on it in the future.
 
 ## Code structure
 * [`game2048/`](game2048/): the API and Expectimax package.
