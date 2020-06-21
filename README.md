@@ -35,6 +35,7 @@ My submission, 1945.6 @10 times, is only one step from 10 victories. However, it
 * [`mdl_final.pkl`](https://jbox.sjtu.edu.cn/l/9J3k5q): the stored final version model.
 * [`run.sh`](run.sh): the shell script for batch operation on log files.
 * [`data_analysis.cpp`](data_analysis.cpp): C++ code, traverse all logs to analyse the performance of agent.
+Due to space limit, generated log files are not uploaded in this repository.
 
 ## Requirements
 * Code tested on Windows and Linux system (Windows 10 and Ubuntu 18.04)
