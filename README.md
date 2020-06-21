@@ -32,7 +32,7 @@ My submission, 1945.6 @10 times, is only one step from 10 victories. However, it
 * [`generate_fingerprint.py`](generate_fingerprint.py): pre-offered script for solution validation.
 * [`webapp.py`](webapp.py): run the web app (backend) demo.
 * [`evaluate.py`](evaluate.py): evaluate self-defined agent.
-* [`mdl_final.pkl`](mdl_final.pkl): the stored final version model.
+* [`mdl_final.pkl`](https://jbox.sjtu.edu.cn/l/9J3k5q): the stored final version model.
 * [`run.sh`](run.sh): the shell script for batch operation on log files.
 * [`data_analysis.cpp`](data_analysis.cpp): C++ code, traverse all logs to analyse the performance of agent.
 
