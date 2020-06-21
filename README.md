@@ -88,7 +88,7 @@ Max Tile | 16 and 16- | 32 | 64 | 128 | 256 | 512 | 1024 | 2048 | Total
 Frequence | 27 | 69 | 427 | 2083 | 8918 | 31371 | 68926 | 38179 | 150000
 Frequency | 0.018% | 0.043% | 0.285% | 1.389% | 5.945% | 20.914% | 45.951% | 25.453% | 100.000%
 
-To be honest, those actions leading to 16- score seems so funny that I am really curious about why my agent carried out them.
+To be honest, those actions leading to 16- score seem so funny that I really wonder why my agent carried out them.
 
 ## Possible improvements
 * As `mdl_final.pkl` has been powerful, incremental learning might be powerful afterwards
