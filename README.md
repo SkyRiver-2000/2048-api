@@ -12,6 +12,7 @@ The main **HIGHLIGHTS** of this project can be summarized as following:
 * The training is completely offline, which makes the solution simple.
 * The convolution structure of my network is a novel combination of two CNNs.
 * The performance of my agent is excellent and stable.
+* The operation of generating log files and analyzing data is efficient and simple.
 
 My submission, 1945.6 @10 times, is only one step from 10 victories. However, it is really a pity that I have no luck to produce a perfect log file. Due to time limit, I haven't try unlimited or harder mode and I'd like work on it in the future.
 
@@ -33,11 +34,10 @@ My submission, 1945.6 @10 times, is only one step from 10 victories. However, it
 * [`evaluate.py`](evaluate.py): evaluate self-defined agent.
 * [`mdl_final.pkl`](mdl_final.pkl): the stored final version model.
 * [`run.sh`](run.sh): the shell script for batch operation on log files.
-* [`data_analysis.cpp`](data_analysis.cpp): C++ code, traverse all logs to analyse the performance of agent
+* [`data_analysis.cpp`](data_analysis.cpp): C++ code, traverse all logs to analyse the performance of agent.
 
 ## Requirements
 * Code tested on Windows and Linux system (Windows 10 and Ubuntu 18.04)
-* Code written and tested with PyTorch 1.5.0 and Torchvision 0.6.1
 * High version of PyTorch and Torchvision is recommended
 * Python 3 (Anaconda 3.6.3 specifically) with numpy, pandas, tqdm and flask
 
@@ -75,20 +75,20 @@ With parameters set in [`run.sh`](run.sh), certain number of log files can be ob
 (Things might change by the end of this year, as Microsoft plans to publish an update for this)
 
 ## Performance analysis
-Using `mdl_final.pkl` in agent, I generated 15,000 logs in total and provide some results here:
+Using `mdl_final.pkl` in agent, I generated 15,000 log files in total and provide some results here:
 ```text
-Average score per game:
-Max average score @10 times ever obtained:
-Ratio of AVERAGE score > 1024 @10 times:
-Ratio of SINGLE GAME victory:
+Average score per game: 1116.08
+Max average score @10 times ever obtained: 1945.6
+Ratio of AVERAGE score > 1024 @10 times: 70.2267%
+Ratio of SINGLE GAME victory: 25.4527%
 ```
 ### Max tile statistics:
-Max Tile | 2~32 | 64 | 128 | 256 | 512 | 1024 | 2048
-:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:
-Frequence | 0 | 1 |
-Frequency | 0% |
+Max Tile | 2 | 4 | 8 | 16 | 32 | 64 | 128 | 256 | 512 | 1024 | 2048 | Total
+:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:
+Frequence | 0 | 3 | 9 | 15 | 69 | 427 | 2083 | 8918 | 31371 | 68926 | 38179 | 150000
+Frequency | 0% | 0.002% | 0.006% | 0.010% | 0.043% | 0.285% | 1.389% | 5.945% | 20.914% | 45.951% | 25.453% | 100.000%
 
-## Discussion and Possible improvements
+## Possible improvements
 * As `mdl_final.pkl` has been powerful, incremental learning might be powerful afterwards
 * I do not use data preprocessing and multi-model decision here, which is possibly useful
 * I train my model offline but I do think this project is more suitable for DQN based model
