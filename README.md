@@ -24,7 +24,9 @@ My submission is only one step from 10 victories. However, it is really a pity t
     * [`expectimax/`](game2048/expectimax): a powerful ExpectiMax agent by [here](https://github.com/nneonneo/2048-ai).
 * [`static/`](static/): frontend assets (based on Vue.js) for web app.
 * [`MyAgent.py`](MyAgent.py): the `MyOwnAgent` class with its implementation.
-* [`cnn.py`](cnn.py): the `Conv_Net_Com` class used as agent and its two originals.
+* [`cnn.py`](cnn.py): the `Conv_Net_Com` class used as agent and its two originals:
+   * `Conv_Net`: A CNN model offered by TA @[duducheng](https://github.com/duducheng).
+   * `Conv_Net_v2`: A CNN model published [here](https://github.com/navjindervirdee/2048-deep-reinforcement-learning).
 * [`train_model.py`](train_model.py): the whole process for training a `Conv_Net_Com` instance, with testing function insides.
 * [`data_process.py`](data_process.py): the `Dataset_2048` class to read and store data, based on `torch.utils.data.Dataset`.
 * [`generate_data.py`](generate_data.py): utilize the planning-based [`Expectimax`](game2048/expectimax) to generate ideal trajectories as training set.
