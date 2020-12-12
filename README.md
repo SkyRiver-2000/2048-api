@@ -1,7 +1,6 @@
 # EE228 Final Assignment
 **Author:** Ruiwen Zhou  
-**Student ID:** 518021911150  
-**E-mail:** zrw2000917@163.com
+**E-mail:** skyriver@sjtu.edu.cn
 
 ## Brief Introduction
 This is the final assignment of EE228 Curriculum @ SJTU, in which we are required to generate a learning-based agent to automatically play 2048 game for a high average score in 10 games.  
